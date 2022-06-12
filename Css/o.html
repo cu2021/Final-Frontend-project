@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        width: 30%;
+        float: left;
+      }
+      img {
+        width: 100%;
+        float: left;
+        border: 3px solid #eee;
+        position: relative;
+        z-index: -1;
+      }
+      .overlay {
+        float: left;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        background-color: #ffff00f3;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+      }
+     .container:hover 
+     .overlay {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../Images/map3.jpg" alt="" />
+      <div class="overlay"></div>
+    </div>
+    <p id="para"></p>
+<script>
+    let para1="Text Text TextTextTextText  Text TextTextTextTextTextText"
+    let i=0;
+    let interval;
+    function counter() {
+        document.getElementById('para').innerHTML+=para1.charAt(i++);
+        if(i==para1.length){
+            clearInterval(counter);
+        }
+    }
+    interval=setInterval(counter,30);
+</script>
+  </body>
+</html>

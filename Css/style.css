@@ -1,0 +1,453 @@
+/* general start  */
+@font-face {
+  font-family: "Open Sans";
+  src: url(../Font/static/OpenSans/OpenSans-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  margin: auto;
+}
+/* general end  */
+/* head start */
+.header {
+  float: left;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(../Images/web99.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header .container {
+  text-align: center;
+  padding: 200px 0px;
+}
+.header .container h1 {
+  color: #d9500c;
+  font-size: 42px;
+  text-shadow: 4px 0px 4px black;
+}
+.header .container span {
+  color: #ec9b06;
+  text-transform: capitalize;
+}
+.header .container p {
+  color: #d9500c;
+  font-size: 30px;
+  text-shadow: 3px 0px 1px black;
+  margin-top: -1%;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-transform: capitalize;
+}
+.clear {
+  clear: both;
+}
+/* header end  */
+/* nav start */
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000000;
+}
+.nav p {
+  float: left;
+  padding: 1px 13px;
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: #ec9b06;
+  line-height: 14px;
+  text-indent: 14px;
+}
+.nav span {
+  color: white;
+}
+.nav p:first-letter {
+  border: 3px white outset;
+  background-color: #696969;
+  margin-right: 6px;
+  text-shadow: #696969 1px 1px 0px;
+  font-size: 24px;
+  padding: 0px 3px;
+  font-family: Algerian;
+}
+.nav .navBarContents a {
+  float: left;
+  text-decoration: none;
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  font-size: 16px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .navBarContents a:hover,
+.nav .navBarContents a:active,
+.nav .navBarContents a:focus {
+  background-color: #e2960a;
+}
+/* nav end */
+/* about us start */
+.about {
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .aboutUs {
+  text-align: left;
+  width: 57%;
+  float: left;
+  padding: 5% 4%;
+}
+
+.Img {
+  margin: 0px auto;
+  width: 40%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Img img {
+  width: 90%;
+  padding: 8% 13%;
+}
+.about .aboutUs h2 {
+  color: #ec9b06;
+  font-size: 36px;
+}
+.about .aboutUs p {
+  line-height: 190%;
+  color: #7e7e7e;
+}
+/* about us end */
+/* Skills  start*/
+.skills {
+  float: left;
+  width: 100%;
+  background-color: #eee;
+}
+.skillsInfo {
+  text-align: left;
+  width: 46%;
+  float: left;
+  padding: 5% 4%;
+}
+.skills .skillsInfo h2 {
+  color: #ec9b06;
+  font-size: 36px;
+}
+.skills .skillsInfo p {
+  line-height: 156%;
+}
+.skills .skillsInfo a > input {
+  border: 3px solid #2ecc71;
+  font-size: 15px;
+  padding: 2% 6%;
+  color: #2ecc71;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.skills .skillsInfo a :hover {
+  color: white;
+  background-color: #2ecc71;
+}
+
+.progress {
+  float: left;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 5% 4%;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 2%;
+}
+.bar {
+  background-color: #fff;
+  padding: 2% 1% 0% 3%;
+  margin-top: 3%;
+  overflow: hidden;
+}
+.backGround {
+  float: left;
+  width: 77%;
+  background-color: #eee;
+  margin: 1% 0% 0% 3%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.bar span {
+  background-color: #ec9b06;
+  height: 36px;
+  float: left;
+  width: 0;
+  transition: 0.1s ease;
+}
+
+.bar .h3 {
+  float: left;
+  width: 19%;
+  margin-left: -1%;
+  margin-top: -1%;
+}
+/* Skills  end*/
+/* Our Projects Start */
+.ourProjects {
+  float: left;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0%;
+  flex-wrap: wrap;
+}
+
+.ourProjects h2 {
+  color: #ec9b06;
+  font-size: 36px;
+  position: relative;
+}
+.ourProjects h2::before {
+  content: "";
+  position: absolute;
+  width: 57%;
+  background-color: #ec9b06;
+  height: 6px;
+  right: 21%;
+  bottom: -31%;
+  z-index: -1;
+}
+.System {
+  float: left;
+  width: 100%;
+}
+.images {
+  position: relative;
+  width: 30%;
+  float: left;
+  margin: 2% 0% 0% 2%;
+}
+
+.img1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 4px solid #eee;
+  margin: 1%;
+  box-shadow: 0px 0px 0px 2px #b1b1b1;
+}
+
+.overlay {
+  position: absolute;
+  top: 1%;
+  right: -1%;
+  height: 98%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.9s ease;
+  background-color: #ec9b06;
+  cursor: pointer;
+}
+
+.images:hover .overlay {
+  opacity: 0.9;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25%;
+}
+/* Our Projects End */
+/*  Our Customers Start*/
+.ourCustomer {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0%;
+  background-color: #eee;
+}
+.ourCustomer h2 {
+  color: #ec9b06;
+  font-size: 36px;
+  position: relative;
+}
+.ourCustomer h2::before {
+  content: "";
+  position: absolute;
+  width: 57%;
+  background-color: #ec9b06;
+  height: 6px;
+  right: 21%;
+  bottom: -31%;
+}
+.cards {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.cards .card {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2% 2% 0% 2%;
+  flex: 50px;
+}
+.card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 2px solid #ec9b06;
+  opacity: 0.5;
+}
+.card h3 {
+  color: #4d0498;
+  font-size: 24px;
+  margin-top: 6%;
+}
+.card p {
+  text-align: center;
+  line-height: 148%;
+  font-size: 15px;
+  margin-top: -1%;
+}
+.card img:hover {
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+/*  Our Customers End*/
+/* Contact Us Start */
+.contactUs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0%;
+  background-image: url(../Images/map3.jpg);
+  background-size: cover;
+  height: 98vh;
+  background-repeat: no-repeat;
+}
+.contactUs h2 {
+  color: #ec9b06;
+  font-size: 36px;
+  position: relative;
+}
+.contactUs h2::before {
+  content: "";
+  position: absolute;
+  width: 57%;
+  background-color: #ec9b06;
+  height: 6px;
+  right: 21%;
+  bottom: -31%;
+}
+
+.cantactForm {
+  width: 68%;
+  position: relative;
+  top: 25%;
+}
+.cantactForm input {
+  display: block;
+  background-color: #eee;
+  width: 49%;
+  border: none;
+  padding: 1% 2% 1% 1%;
+  margin-top: 1%;
+}
+.cantactForm textarea {
+  position: absolute;
+  top: -4%;
+  right: 9%;
+  display: block;
+  background-color: #eee;
+  width: 40%;
+  height: 96%;
+  border: none;
+  padding: 2%;
+  margin: 2% 0% 0% 0%;
+}
+input[type="submit"] {
+  background-color: #e2960a;
+  margin-top: 2%;
+  color: white;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  box-shadow: 0px 0px 2px 2px #000;
+}
+/* Contact Us End */
+/* Top Start */
+#top {
+  display: none;
+  font-size: 20px;
+  float: left;
+  font-weight: bold;
+  padding: 1.5% 1.2%;
+  border: none;
+  border-radius: 13px;
+  color: #fff;
+  background-color: #000;
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  cursor: pointer;
+  z-index: 100;
+}
+#top:hover {
+  box-shadow: 0px 0px 3px 2px #9e9e9e;
+}
+/* Top End */
+/* Footer start */
+.footer {
+  background-color: #333;
+  text-align: center;
+  padding: 4% 4% 2% 4%;
+}
+.footer p {
+  color: #fff;
+  padding: 0% 0% 1% 0%;
+}
+/* Footer End */
